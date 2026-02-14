@@ -6,76 +6,66 @@
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Individual
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Anagha Vijayan - LBS Institute of Technology For Women
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Budget Buddy is a smart student budget planner that tracks income, expenses, and savings goals. It provides real-time updates, goal progress, and survival mode alerts to help students manage spending wisely and stay on track financially.
 
 ### The Problem statement
-[What problem are you solving?]
+Students often struggle to manage their limited monthly pocket money, leading to overspending, missed savings goals, and financial stress. Existing methods lack real-time tracking and guidance, making it difficult for students to monitor expenses, prioritize spending, and achieve their financial targets effectively.
 
 ### The Solution
-[How are you solving it?]
+Budget Buddy provides a smart, real-time budgeting platform for students. It tracks income, expenses, and savings goals, calculates remaining balance, and alerts users with goal progress and survival mode notifications. This helps students make informed spending decisions, save efficiently, and stay financially on track.
 
 ---
 
 ## Technical Details
+Frontend: HTML, CSS (Tokyo Night theme), JavaScript (app.js, calculations.js, ui.js)
 
+Backend: Firebase Firestore for storing and retrieving expenses in real-time
+
+Features: Income & goal tracking, expense logging, dashboard with total spent, remaining balance, savings progress, and survival alerts
+
+Design: Modular, responsive, and easy-to-maintain structure for smooth user experience
 ### Technologies/Components Used
+HTML5 & CSS3 – Structure and styling (Tokyo Night theme)
 
+JavaScript (ES6 Modules) – Logic, calculations, and DOM manipulation
+
+Firebase Firestore – Real-time database for storing expenses and goals
+
+Modular Architecture – app.js, calculations.js, ui.js for maintainability
+
+Responsive Design – Works on desktop and mobile devices
+
+Icons / Assets – SVG images for expense categories (Food, Travel, Academics, Entertainment)
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used:  JavaScript,HTML,CSS 
+- Tools used:  VS Code, Firebase
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: Monthly expense calculator
+- Feature 2: Survival remainder
+- Feature 3: Savings goal can be added 
+
 
 ---
 
 ## Implementation
+Budget Buddy is implemented as a web application using HTML, CSS, and JavaScript with a modular architecture. Firebase Firestore stores income, expenses, and savings goals, allowing real-time updates. Calculations for total spent, remaining balance, goal progress, and survival mode are handled in a separate calculations.js module, while ui.js manages all dashboard updates and alerts. The app provides a responsive, interactive interface where students can add income, set goals, log expenses, and instantly track their financial status.
 
-### For Software:
-
-#### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
-
-#### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
@@ -83,14 +73,15 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![WhatsApp Image 2026-02-14 at 09 45 44](https://github.com/user-attachments/assets/ae346d7d-ef4e-4855-94eb-d5852ce38f64) - It shows its UI.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](Html and css structure when fully  developed)<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/20243eef-e00b-46e3-a7c6-42d18c170cda" />
+
+
+![Screenshot3] (Inputting data)<img width="1800" height="847" alt="image" src="https://github.com/user-attachments/assets/d2f147cd-4c79-4dfc-aec7-f798c1120e44" />
+
+
 
 #### Diagrams
 
@@ -102,21 +93,31 @@ List the key features of your project:
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+
+  +------------------+
+  |   User Browser   |
+  | HTML/CSS/JS UI   |
+  +------------------+
+           |
+           v
+  +------------------+
+  |    app.js        |
+  | Event Handling   |
+  +------------------+
+     |         |
+     v         v
++-----------+  +-----------+
+| calculations.js | ui.js |
++-----------+  +-----------+
+           |
+           v
+   +------------------+
+   |  Firebase DB     |
+   | expenses, income |
+   +------------------+
 
 ---
 
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
 
 ![Team](Add photo of your team here)
 
